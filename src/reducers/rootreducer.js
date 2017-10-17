@@ -3,6 +3,7 @@ import { cardState } from './cardstate';
 import { cordovaState } from './cordovastate';
 import { visibilityFilter, todos } from './appstate';
 
+
 const reducers = {
   cardState,
   cordovaState,
@@ -12,4 +13,4 @@ const reducers = {
 
 const rootReducer = combineReducers(reducers);
 
-export { rootReducer };//eslint-disable-line
+export { rootReducer };
