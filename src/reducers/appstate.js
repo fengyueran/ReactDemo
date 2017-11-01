@@ -1,17 +1,20 @@
+import * as actions from '../actions/action';
+
 const ADD_TODO = 'ADD_TODO';
 const COMPLETE_TODO = 'COMPLETE_TODO';
-const VisibilityFilters = {
-  SHOW_ALL: 'SHOW_ALL',
-  SHOW_COMPLETED: 'SHOW_COMPLETED',
-  SHOW_ACTIVE: 'SHOW_ACTIVE',
-};
+
 const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
-const { SHOW_ALL } = VisibilityFilters;
+const { SHOW_ALL } = actions.VisibilityFilters;
 
 const initialState = {
-  visibilityFilter: VisibilityFilters.SHOW_ALL,
+  visibilityFilter: actions.VisibilityFilters.SHOW_ALL,
   todos: [],
 };
+
+const addTodo = (text) =>
+  dispatch => {
+    dispatch(actions.addTodo(text));
+  };
 
 // reducer 1
 const visibilityFilter = (state = SHOW_ALL, action) => {
@@ -45,4 +48,4 @@ const todos = (state = [], action) => {
   }
 };
 
-export { visibilityFilter, todos };
+export { visibilityFilter, todos, addTodo };
