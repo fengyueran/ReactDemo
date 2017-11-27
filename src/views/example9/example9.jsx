@@ -34,9 +34,12 @@ class LifeCircle extends React.Component {
     this.setState({ age: this.state.age });
   }
 
+  // 组件将要加载
   componentWillMount() {
     alert("component will mount");
   }
+
+  // 组件加载到DOM完成
   componentDidMount() {
     alert("component did mount");
   }
@@ -46,6 +49,8 @@ class LifeCircle extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     alert("component did update");
   }
+
+  // 组件从DOM中移除
   componentWillUnmount() {
     alert("component will unmount");
   }
