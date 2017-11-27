@@ -1,16 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 import ExampleButton from '../button';
-import createExample1 from '../example1';
-import createExample2 from '../example2';
-import createExample3 from '../example3';
-import createExample4 from '../example4';
-import createExample5 from '../example5';
+import { createExample1, createExample2, createExample3, createExample4, createExample5, createExample6 } from '../index';
 
 const buttons = [{ id: 1, name: 'example1', click: createExample1 },
   { id: 2, name: 'example2', click: createExample2 },
   { id: 3, name: 'example3', click: createExample3 },
   { id: 4, name: 'example4', click: createExample4 },
-  { id: 5, name: 'example5', click: createExample5 }];
+  { id: 5, name: 'example5', click: createExample5 },
+  { id: 6, name: 'example6', click: createExample4 }];
 
 class Main extends Component {
   constructor(props) {
