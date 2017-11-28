@@ -8,6 +8,7 @@ import createExample7 from './example7';
 import createExample8 from './example8';
 import createExample9 from './example9';
 import createExample10 from './example10';
+import createExample11 from './example11';
 
 export { createExample1, createExample2, createExample3, createExample4, createExample5, createExample6, createExample7, createExample8,
-  createExample9, createExample10 };
+  createExample9, createExample10, createExample11 };
