@@ -18,15 +18,33 @@ const HelloMessage = React.createClass({
 
 class HelloWorld extends React.Component {
   render() {
-    return <h1>{this.props.world}</h1>;
+    // info接收this.props除plant以外的所有属性
+    const { planet, ...info } = this.props;
+    return (
+      <div>
+        <h1>{planet}</h1>
+        <h1>{info.age}</h1>
+        <h1>{info.radius}</h1>
+      </div>
+    );
+  }
+}
+
+class Age extends React.Component {
+  render() {
+    return <h1>{this.props.age}</h1>;
   }
 }
 
 const createExample4 = () => {
+  const props = { name: "Mars", age: 100, radius: 5000 };
   ReactDOM.render(
     <div>
       <HelloMessage name="XH" />
-      <HelloWorld world="Mars" />
+      {/* 扩展运算符来传递属性 */}
+      <HelloWorld planet="Mars" {...props} />
+      {/* 传递props,需要加大括号(大括号当js解析) */}
+      <Age age={10} />
     </div>
     , document.getElementById('app')
   );
