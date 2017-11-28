@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ExampleButton from '../button';
 import { createExample1, createExample2, createExample3, createExample4, createExample5, createExample6, createExample7, createExample8,
-  createExample9 } from '../index';
+  createExample9, createExample10 } from '../index';
 
 const buttons = [{ id: 1, name: 'example1', click: createExample1 },
   { id: 2, name: 'example2', click: createExample2 },
@@ -11,7 +11,8 @@ const buttons = [{ id: 1, name: 'example1', click: createExample1 },
   { id: 6, name: 'example6', click: createExample6 },
   { id: 7, name: 'example7', click: createExample7 },
   { id: 8, name: 'example8', click: createExample8 },
-  { id: 9, name: 'example9', click: createExample9 }];
+  { id: 9, name: 'example9', click: createExample9 },
+  { id: 10, name: 'example10', click: createExample10 }];
 
 class Main extends Component {
   constructor(props) {
