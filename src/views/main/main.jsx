@@ -40,7 +40,7 @@ class Main extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         { this.state.content }
       </div>);
   }

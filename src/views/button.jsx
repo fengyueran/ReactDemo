@@ -5,7 +5,7 @@ class ExampleButton extends Component {
     const { name, onClick } = this.props;
     return (
       <div>
-        <button style={{ width: '80px', height: '35px', marginBottom: '10px' }} onClick={onClick}>
+        <button style={{ width: '180px', height: '135px', marginBottom: '10px' }} onClick={onClick}>
           {name}
         </button>
       </div>
