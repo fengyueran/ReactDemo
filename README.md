@@ -21,3 +21,7 @@
   Handling Events
 11.Example11
   Context
+12.Example12
+    redux的简单用法
+13.Example13
+    redux middleware
