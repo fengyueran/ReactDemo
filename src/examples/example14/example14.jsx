@@ -45,7 +45,9 @@ Main.propTypes = {
   decrease: PropTypes.func.isRequired,
 };
 
+// mapStateToProps会订阅store, state更新时自动执行重而更新UI
 const mapStateToProps = (state, ownProps) => {
+  // ownProps为container的属性
   console.log(ownProps);
   const num = state || ownProps.num;
   return { num };
@@ -60,9 +62,7 @@ const MainContainer = connect(
 const createExample14 = () => {
   ReactDOM.render(
     <Provider store={store}>
-      <div>
-        <MainContainer num={0} />
-      </div>
+      <MainContainer num={0} />
     </Provider>
     , document.getElementById('app')
   );
