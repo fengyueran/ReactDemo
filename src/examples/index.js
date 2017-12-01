@@ -13,6 +13,7 @@ import createExample12 from './example12';
 import createExample13 from './example13';
 import createExample14 from './example14';
 import createExample15 from './example15';
+import createExample16 from './example16';
 
 export { createExample1, createExample2, createExample3, createExample4, createExample5, createExample6, createExample7, createExample8,
-  createExample9, createExample10, createExample11, createExample12, createExample13, createExample14, createExample15 };
+  createExample9, createExample10, createExample11, createExample12, createExample13, createExample14, createExample15, createExample16 };
