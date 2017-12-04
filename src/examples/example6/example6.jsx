@@ -75,4 +75,8 @@ const createExample6 = () => {
   );
 };
 
-export { createExample6 };
+const Example6 = () => (
+  <Hello message="hello" />
+);
+
+export { Example6 };

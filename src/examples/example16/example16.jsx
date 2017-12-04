@@ -18,35 +18,43 @@ const Home = () => (
 
 class Main extends React.Component {
   render() {
+    const { match } = this.props;
     return (
       <div>
         <span>Router</span>
-        <li><Link to="/">Homes</Link></li>
+        <li><Link to={`${match.url}`}>Homes</Link></li>
         {/* Link 跳转到某个路由 */}
-        <li><Link to="/category">Category</Link></li>
-        <li><Link to="/products">Products</Link></li>
+        <li><Link to={`${match.url}/category`}>Category</Link></li>
+        <li><Link to={`${match.url}/products`}>Products</Link></li>
         {/* Switch匹配第一个，如果URL为/category， 同样会匹配/:id */}
         <Switch>
-          <Route exact={true} path="/" component={Home} />
-          <Route path="/category" component={Category} />
-          <Route path="/products" component={Products} />
-          <Route path="/:id" render={() => (<p> I want this text to show up for all routes other than '/', '/products' and '/category'</p>)} />
+          <Route exact={true} path={`${match.url}`} component={Home} />
+          <Route path={`${match.url}/category`} component={Category} />
+          <Route path={`${match.url}/products`} component={Products} />
+          <Route path={`${match.url}/:id`} render={() => (<p> I want this text to show up for all routes other than '/', '/products' and '/category'</p>)} />
         </Switch>
       </div>
     );
   }
 }
 
+Main.propTypes = {
+  match: PropTypes.object.isRequired,
+};
 
-const createExample16 = () => {
+const createExample16 = (match) => {
   ReactDOM.render(
     <BrowserRouter >
       {/* Router组件允许只有一个子元素(Main) */}
-      <Main />
+      <Main match={match} />
     </BrowserRouter>
     , document.getElementById('app')
   );
 };
 
+const Example16 = (match) => (
+  <Main match={match} />
+);
 
-export { createExample16 };
+
+export { Example16 };

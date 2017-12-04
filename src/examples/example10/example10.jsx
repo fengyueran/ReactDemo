@@ -104,4 +104,8 @@ const createExample10 = () => {
   );
 };
 
-export { createExample10 };
+const Example10 = () => (
+  <EventBox />
+);
+
+export { Example10 };

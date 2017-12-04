@@ -19,4 +19,12 @@ const createExample2 = () => {
   );
 };
 
-export { createExample2 };
+const Example2 = () => (
+  <div>
+    {
+      animals.map((animal) => (
+        <h1>{animal}</h1>))
+    }
+  </div>);
+
+export { Example2 };

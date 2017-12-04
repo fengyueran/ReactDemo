@@ -12,10 +12,18 @@ const createExample3 = () => {
     <div>
       { namesArr }
       {foods.map((food) =>
-        <span key={food}>food</span>)} 
+        <span key={food}>food</span>)}
     </div>
     , document.getElementById('app')
   );
 };
 
-export { createExample3 };
+const Example3 = () => (
+  <div>
+    { namesArr }
+    {foods.map((food) =>
+      <span key={food}>food</span>)}
+  </div>
+);
+
+export { Example3 };

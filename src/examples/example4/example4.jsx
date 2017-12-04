@@ -50,4 +50,17 @@ const createExample4 = () => {
   );
 };
 
-export { createExample4 };
+const Example4 = () => {
+  const props = { name: "Mars", age: 100, radius: 5000 };
+  return (
+    <div>
+      <HelloMessage name="XH" />
+      {/* 扩展运算符来传递属性 */}
+      <HelloWorld planet="Mars" {...props} />
+      {/* 传递props,需要加大括号(大括号当js解析) */}
+      <Age age={10} />
+    </div>
+  );
+};
+
+export { Example4 };

@@ -38,4 +38,10 @@ const createExample11 = () => {
   );
 };
 
-export { createExample11 };
+const Example11 = () => (
+  <LocalProvider>
+    <ContextTest1 />
+  </LocalProvider>
+);
+
+export { Example11 };

@@ -44,4 +44,8 @@ const createExample7 = () => {
   );
 };
 
-export { createExample7 };
+const Example7 = () => (
+  <Parent />
+);
+
+export { Example7 };

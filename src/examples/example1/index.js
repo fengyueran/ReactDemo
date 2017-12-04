@@ -1,3 +1,3 @@
-import { createExample } from './example1';
+import { Example1 } from './example1';
 
-export default createExample;
+export default Example1;

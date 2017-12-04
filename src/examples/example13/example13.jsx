@@ -53,6 +53,10 @@ const createExample13 = () => {
   );
 };
 
-store.subscribe(createExample13);
+const Example13 = () => (
+  <Main />
+);
 
-export { createExample13 };
+store.subscribe(Example13);
+
+export { Example13 };

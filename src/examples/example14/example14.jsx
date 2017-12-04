@@ -68,5 +68,11 @@ const createExample14 = () => {
   );
 };
 
+const Example14 = () => (
+  <Provider store={store}>
+    <MainContainer num={0} />
+  </Provider>
+);
 
-export { createExample14 };
+
+export { Example14 };

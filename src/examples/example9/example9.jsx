@@ -92,4 +92,8 @@ const createExample9 = () => {
   );
 };
 
-export { createExample9 };
+const Example9 = () => (
+  <LifeController />
+);
+
+export { Example9 };

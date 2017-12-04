@@ -56,4 +56,8 @@ const createExample8 = () => {
   );
 };
 
-export { createExample8 };
+const Example8 = () => (
+  <InputField />
+);
+
+export { Example8 };

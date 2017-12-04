@@ -60,7 +60,7 @@ class Main extends Component {
               <div style={{
                 position: 'absolute', width: '100%', height: '100%', backgroundColor: 'gray',
                }}>
-                {currentExample()}
+                {currentExample(info.match)}
               </div>);
           }
         } />)
