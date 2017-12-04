@@ -1,21 +1,21 @@
-import createExample1 from './example1';
-import createExample2 from './example2';
-import createExample3 from './example3';
-import createExample4 from './example4';
-import createExample5 from './example5';
-import createExample6 from './example6';
-import createExample7 from './example7';
-import createExample8 from './example8';
-import createExample9 from './example9';
-import createExample10 from './example10';
-import createExample11 from './example11';
-import createExample12 from './example12';
-import createExample13 from './example13';
-import createExample14 from './example14';
-import createExample15 from './example15';
-import createExample16 from './example16';
-import createExample17 from './example17';
+import Example1 from './example1';
+import Example2 from './example2';
+import Example3 from './example3';
+import Example4 from './example4';
+import Example5 from './example5';
+import Example6 from './example6';
+import Example7 from './example7';
+import Example8 from './example8';
+import Example9 from './example9';
+import Example10 from './example10';
+import Example11 from './example11';
+import Example12 from './example12';
+import Example13 from './example13';
+import Example14 from './example14';
+import Example15 from './example15';
+import Example16 from './example16';
+import Example17 from './example17';
 
-export { createExample1, createExample2, createExample3, createExample4, createExample5, createExample6, createExample7, createExample8,
-  createExample9, createExample10, createExample11, createExample12, createExample13, createExample14, createExample15, createExample16,
-  createExample17 };
+export { Example1, Example2, Example3, Example4, Example5, Example6, Example7, Example8,
+  Example9, Example10, Example11, Example12, Example13, Example14, Example15, Example16,
+  Example17 };
