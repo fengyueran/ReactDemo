@@ -58,7 +58,7 @@ class Main extends Component {
             const currentExample = result.example;
             return (
               <div style={{
-                position: 'absolute', width: '100%', height: '100%', backgroundColor: 'gray',
+                position: 'absolute', width: '100%', height: '100%', backgroundColor: '#e4e1e1',
                }}>
                 {currentExample(info.match)}
               </div>);
